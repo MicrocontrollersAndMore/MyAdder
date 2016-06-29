@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gentex.android.myadder.MainActivity">
+    tools:context="com.chrisdahms.android.myadder.MainActivity">
 
     <EditText
         android:id="@+id/etNum1"
@@ -17,11 +17,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="25dp"
+        android:minWidth="90sp"
         android:textSize="30sp"
-        android:minWidth="100dp"
         android:inputType="number"/>
 
     <TextView
@@ -30,38 +30,39 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/tvPlusSign_text"
+        android:textSize="30sp"
         android:layout_alignBottom="@+id/etNum1"
         android:layout_toRightOf="@+id/etNum1"
         android:layout_toEndOf="@+id/etNum1"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
-        android:textSize="30sp"/>
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"/>
 
     <EditText
         android:id="@+id/etNum2"
-        android:layout_alignTop="@+id/etNum1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etNum1"
         android:layout_toRightOf="@+id/tvPlusSign"
         android:layout_toEndOf="@+id/tvPlusSign"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
-        android:minWidth="100dp"
-        android:layout_alignBottom="@+id/etNum1"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
         android:textSize="30sp"
+        android:minWidth="90sp"
         android:inputType="number"/>
 
     <TextView
         android:id="@+id/tvEqualSign"
-        android:layout_below="@+id/etNum1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/tvEqualSign_text"
+        android:layout_marginTop="38dp"
+        android:textSize="30sp"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_below="@+id/etNum1"
         android:layout_alignRight="@+id/etNum1"
-        android:layout_alignEnd="@+id/etNum1"
-        android:layout_marginTop="49dp"
-        android:textSize="30sp"/>
+        android:layout_alignEnd="@+id/etNum1"/>
 
     <TextView
         android:id="@+id/tvAnswer"
@@ -69,21 +70,19 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_alignBottom="@+id/tvEqualSign"
-        android:layout_alignLeft="@+id/tvPlusSign"
-        android:layout_alignStart="@+id/tvPlusSign"
+        android:layout_centerHorizontal="true"
         android:textSize="30sp"
-        android:minWidth="100dp"
-        android:minHeight="55dp"/>
+        android:minWidth="90sp"/>
 
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnAdd_text"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/tvEqualSign"
-        android:layout_alignStart="@+id/tvEqualSign"/>
+        android:layout_below="@+id/tvAnswer"
+        android:layout_toRightOf="@+id/tvEqualSign"
+        android:layout_toEndOf="@+id/tvEqualSign"
+        android:layout_marginTop="37dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"/>
 </RelativeLayout>
-
-
-
