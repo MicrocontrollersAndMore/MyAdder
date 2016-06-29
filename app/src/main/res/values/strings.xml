@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyAdder</string>
+
+    <string name="tvPlusSign_text">+</string>
+    <string name="tvEqualSign_text">=</string>
+    <string name="btnAdd_text">Add</string>
+
+</resources>
