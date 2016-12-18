@@ -1,1 +1,1 @@
-empty readme
+Android Studio program that adds two numbers together, this is the most basic Android Studio program that I could come up with to demonstrate getting user input and showing output.  I may do a full tutorial on this eventually.
